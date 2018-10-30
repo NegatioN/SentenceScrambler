@@ -14,5 +14,4 @@ rgx = re.compile('\s')
 for x in sentences:
     arr = rgx.split(x.replace('\n', ''))
     shuffle(arr)
-    print(arr)
-
+    print(' '.join(arr))
