@@ -14,6 +14,7 @@ with open(options.filepath, 'r', encoding='utf-8') as f:
 
 rgx = re.compile('\s')
 with open(options.outpath, 'w+', encoding='utf-8') as o:
+    shuffle(sentences)
     for x in sentences:
         arr = rgx.split(x.replace('\n', ''))
         shuffle(arr)
